@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" />
+		<title></title>
+			<link href="font/iconfont.css" rel="stylesheet" />	
+			<script src="jquery-3.2.1.js"></script>
+		<style>
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			.guanggao{
+				width: 100%;
+				background-color: #444444;
+				height: 40px;
+				line-height: 40px;				
+			}
+			.guanggao1{
+				width: 85%;
+				text-align: right;
+				color: #FFFFFF;
+				font-size: 12px;
+				opacity: 0.6;
+			}	
+			.apple a span{
+				color: white;
+			}	
+			.sou{
+				display: none;
+			}			
+			@media  screen and (min-width:768px ) and (max-width:1069px ) {		
+				#da{
+					width:100%;
+					background-color: #323232;					
+					height: 44px;
+					line-height: 44px;
+				}													
+				
+				.daohangtiao{
+					width:100%;
+					background-color: #323232;					
+					height: 44px;
+				}																
+				.daohangtiao ul{
+					display: flex;
+					justify-content: space-around;
+					height: 44px;
+					line-height: 44px;
+				}
+				.daohangtiao ul li{
+					list-style: none;
+				}
+				.daohangtiao ul li a{
+					color: #FFFFFF;
+					opacity: 0.9;
+					text-decoration: none;
+				}
+				.daohangtiao ul li a:hover{
+					color: #FFFFFF;
+					opacity: 0.6;
+					text-decoration: none;
+				}
+				.sp{
+					display: none;
+				}
+				.watch,.iphone{
+					width: 100%;
+					height: 569px;
+					text-align: center;
+					margin: 0 auto;
+				}
+				.iphone{
+					background-color:#FAFAFA;
+				}
+				.watch{
+					margin-top: 15px;
+					background-color:#F5F5F5;
+				}	
+				.iphone1{
+					width: 100%;
+					height: auto;
+					padding-top: 88px;padding-bottom: 88px;
+				}
+				.watch1{
+					width: 100%;
+					height: auto;
+					padding-top: 47px;padding-bottom: 47px;
+				}
+				.iphone1 h2{
+					font-size: 44px;
+				}
+				.iphone1 h3{
+					font-size: 24px;
+				}
+				.content{
+					width: 704px;
+					height: 148px;
+					margin: 0 auto;
+				}
+				.content3{
+					width: 742px;
+					height: 383px;
+					margin: 0 auto;
+				}
+				.content1{
+					background:url(img/iphone_x_medium.jpg) no-repeat;
+					width: 100%;
+					height: 100%;
+					background-position: 0 0;					
+				}	
+				.content2{
+					background: url(img/ipad_medium.jpg) no-repeat;
+					width: 100%;
+					height: 100%;
+					background-position: 0 0;
+				}	
+				.watch1 h2{
+					font-size: 37px;
+					font-weight: 600;
+				}
+				.watch1 h3{
+					font-size: 22px;
+					font-weight: 400;
+				}
+				.liebiao{
+					margin-top: 15px;
+					width: 100%;
+				}
+				.liebiao ul{
+					display: flex;
+					justify-content: space-around;
+					flex-flow: wrap row;
+					width: 100%;
+				}	
+				.liebiao ul li{
+					list-style: none;
+					width: 48%;
+					height:  522px;
+				}
+				.liebiao ul li>div{
+					width: 100%;
+					height: 505px;
+					margin: 0 auto;
+					text-align: center;
+					overflow: hidden;					
+				}
+				.te{
+					background-color: #1A1A1A;
+				}
+				.shu{
+					background-color: #B00E23;
+				}
+				.bei{
+					background-color: #FAFAFA;
+				}
+				.box1{
+					width: 100%;
+					height: auto;
+					padding-top: 53px;
+					
+				}
+				.box1 h2{
+					font-size: 40px;
+				}
+				.box1 h5{
+					font-size: 22px;
+					font-weight: 100;
+					
+				}
+				.box1 h2,.box1 h5{
+					color: white;
+				}
+				.coo h2,.coo h5{
+					color: black;
+				}
+				.special{
+					padding-top: 53px;
+				}
+				.box3{					
+					width: 100%;
+					height: 100%;
+					background-position: 0 0;
+				}
+				.box3-item{
+					background: url(http://ozcpgl12w.bkt.clouddn.com/imac_pro_medium.jpg) no-repeat;
+				}	
+				.box2-item{
+					width: 380px;
+					height: 392px;
+					margin: 0 auto;
+				}
+				.box3-item1{
+					background: url(img/product_red_medium.jpg) no-repeat;
+				}	
+				.box2-item1{
+					width: 300px;
+					height: 350px;
+					margin: 0 auto;
+					padding-top: 28px;
+				}
+				.box3-item2{
+					background: url(http://ozcpgl12w.bkt.clouddn.com/watch_series_3_medium.jpg) no-repeat;
+				}	
+				.box2-item2{
+					width: 288px;
+					height: 322px;
+					margin: 0 auto;
+					padding-top: 50px;
+				}
+				.wenzi{
+					background: url(http://ozcpgl12w.bkt.clouddn.com/watch_series_3_promo_medium.png) no-repeat;
+					background-position: 0 0;
+					width: 117px;
+					height: 44px;
+					margin: 0 auto;			
+				}
+				.box3-item3{
+					background: url(http://ozcpgl12w.bkt.clouddn.com/trade_up_medium.jpg) no-repeat;
+				}	
+				.box2-item3{
+					width: 516px;
+					height: 490px;
+					margin: 0 auto;
+					position: relative;
+					top: -100px;
+				}
+				.show{
+					position: relative;
+					z-index: 100;
+				}
+				.box3-item4{
+					background: url(http://ozcpgl12w.bkt.clouddn.com/ipad_pro_film_medium.jpg) no-repeat;
+				}	
+				.box2-item4{
+					width: 516px;
+					height: 490px;
+					margin: 0 auto;
+					position: relative;
+					top: -134px;
+				}
+				.box3-item5{
+					background: url(http://ozcpgl12w.bkt.clouddn.com/holiday_film_medium.jpg) no-repeat;
+				}	
+				.box2-item5{
+					width: 516px;
+					height: 489px;
+					margin: 0 auto;
+					position: relative;
+					top: -186px;
+				}
+				.footer{
+					background-color: #F2F2F2;
+					width: 100%;
+					margin: 0 auto;		
+					margin-top: -15px;			
+				}
+				.room{
+					width: 100%;
+					height: 286px;
+					margin: 0 auto;
+					padding-top: 30px;					
+				}
+				.room>ul{
+					display: flex;
+					justify-content: space-around;
+				}
+				.room ul li{
+					list-style: none;
+					font-size: xx-small;
+					color: #555;				
+				}
+				.room>ul>li>ul>li{
+					height: 18px;
+					line-height: 18px;
+				}
+				.huanhang{
+					margin-top: 20px;
+				}
+				.more{
+					width: 80%px;
+					margin: 0 auto;
+					color: #BFBFBF;
+				}
+				.banquan{
+					border-top: 1px solid #D6D6D6;
+					width: 80%px;
+					padding-top: 10px;
+				}
+				.footer1{
+					width: 260px;
+					height: 17px;
+					float: left;
+				}
+				.footer2 {
+					height: 20px;
+					width: 320px;
+					margin-left: 300px;
+				}
+				.footer2 ul li{
+					list-style: none;					
+					font-size: 10px;										
+				}
+				.footer2 ul li a{
+					color: #555555;
+					text-decoration: none;
+				}
+				.footer2 ul{
+					width: 320px;
+					display: flex;
+					justify-content: space-around;
+				}
+				.more span{
+					color: #0070C9;
+				}
+				.footer3{
+					padding-bottom: 10px;
+				}	
+			}
+			
+			@media  screen  and (min-width:1069px ){	
+				#da{
+					width:100%;
+					background-color: #323232;					
+					height: 44px;
+					line-height: 44px;
+				}																					
+				.daohangtiao{
+					width:100%;
+					background-color: #323232;					
+					height: 44px;
+				}																				
+				.daohangtiao ul{
+					display: flex;
+					justify-content: space-around;
+					height: 44px;
+					line-height: 44px;
+				}
+				.daohangtiao ul li{
+					list-style: none;
+				}
+				.daohangtiao ul li a{
+					color: #FFFFFF;
+					opacity: 0.9;
+					text-decoration: none;
+				}
+				.daohangtiao ul li a:hover{
+					color: #FFFFFF;
+					opacity: 0.6;
+					text-decoration: none;
+				}
+				.sp{
+					display: none;
+				}
+				.watch,.iphone{
+					width: 100%;
+					height: 580px;
+					text-align: center;
+					margin: 0 auto;
+				}	
+				.iphone{
+					background-color:#FAFAFA;
+				}
+				.watch{
+					margin-top: 15px;
+					background-color:#F5F5F5;
+				}
+				
+				.iphone1{
+					width: 100%;
+					height: auto;
+					padding-top: 88px;padding-bottom: 88px;
+				}
+				.watch1{
+					width: 100%;
+					height: auto;
+					padding-top: 47px;padding-bottom: 47px;
+				}
+				.iphone1 h2{
+					font-size: 45px;
+				}
+				.iphone1 h3{
+					font-size: 24px;
+				}
+				.watch1 h2{
+					font-size: 45px;
+					font-weight: 600;
+				}
+				.watch1 h3{
+					font-size: 24px;
+					font-weight: 400;
+				}
+				.content{
+					width: 909px;
+					height: 194px;
+					margin: 0 auto;
+				}
+				.content3{
+					width: 1000px;
+					height: 403px;
+					margin: 0 auto;
+				}
+				.content1{
+					background: url(img/iphone_x_large.jpg) no-repeat;
+					width: 100%;
+					height: 100%;
+					background-position: 0 0;
+				}
+				.content2{
+					background: url(img/ipad_large.jpg) no-repeat;
+					width: 100%;
+					height: 100%;
+					background-position: 0 0;
+				}
+				.liebiao{
+					margin-top: 15px;
+					width: 100%;
+				}
+				.liebiao ul{
+					display: flex;
+					justify-content: space-around;
+					flex-flow: wrap row;
+					height: 1791px;
+					width: 100%;
+				}	
+				.liebiao ul li{
+					list-style: none;
+					width: 48.4%;
+				}
+				.liebiao ul li>div{
+					width: 100%;
+					height: 580px;
+					margin: 0 auto;
+					text-align: center;
+					overflow: hidden;
+					
+				}
+				.te{
+					background-color: #1A1A1A;
+				}
+				.shu{
+					background-color: #B00E23;
+				}
+				.bei{
+					background-color: #FAFAFA;
+				}
+				.box1{
+					width: 100%;
+					height: auto;
+					padding-top: 53px;					
+				}
+				.box1 h2{
+					font-size: 40px;
+				}
+				.box1 h5{
+					font-size: 22px;
+					font-weight: 100;					
+				}
+				.box1 h2,.box1 h5{
+					color: white;
+				}
+				.coo h2,.coo h5{
+					color: black;
+				}
+				.special{
+					padding-top: 53px;
+				}
+				.box3{					
+					width: 100%;
+					height: 100%;					
+					background-position: 0 0;
+				}
+				.box3-item{
+					background: url(http://ozcpgl12w.bkt.clouddn.com/imac_pro_large.jpg) no-repeat;
+				}	
+				.box2-item{
+					width: 450px;
+					height: 457px;
+					margin: 0 auto;
+				}
+				.box3-item1{
+					background: url(img/product_red_large.jpg) no-repeat;
+				}	
+				.box2-item1{
+					width: 415px;
+					height: 416px;
+					margin: 0 auto;
+					padding-top: 28px;
+				}
+				.box3-item2{
+					background: url(http://ozcpgl12w.bkt.clouddn.com/watch_series_3_large.jpg) no-repeat;
+				}	
+				.box2-item2{
+					width: 586px;
+					height: 274px;
+					margin: 0 auto;
+					padding-top: 90px;
+				}
+				.wenzi{
+					background: url(http://ozcpgl12w.bkt.clouddn.com/watch_series_3_promo_large.png) no-repeat;
+					background-position: 0 0;
+					width: 142px;
+					height: 54px;
+					margin: 0 auto;			
+				}
+				.box3-item3{
+					background: url(http://ozcpgl12w.bkt.clouddn.com/trade_up_large.jpg) no-repeat;
+				}	
+				.box2-item3{
+					width: 1262px;
+					height: 580px;
+					margin: 0 auto;
+					position: relative;
+					left: -325px;
+					top: -170px;
+				}
+				.show{
+					position: relative;
+					z-index: 100;
+				}
+				.box3-item4{
+					background: url(http://ozcpgl12w.bkt.clouddn.com/ipad_pro_film_large.jpg) no-repeat;
+				}	
+				.box2-item4{
+					width: 1262px;
+					height: 580px;
+					margin: 0 auto;
+					position: relative;
+					left: -325px;
+					top: -134px;
+				}
+				.box3-item5{
+					background: url(http://ozcpgl12w.bkt.clouddn.com/holiday_film_large.jpg) no-repeat;
+				}	
+				.box2-item5{
+					width: 1262px;
+					height: 580px;
+					margin: 0 auto;
+					position: relative;
+					left: -325px;
+					top: -186px;
+				}
+				.footer{
+					background-color: #F2F2F2;
+					margin-top: 15px;
+					width: 100%;
+					margin: 0 auto;					
+				}
+				.room{
+					width: 980px;
+					height: 286px;
+					margin: 0 auto;
+					padding-top: 30px;					
+				}
+				.room>ul{
+					display: flex;
+					justify-content: space-around;
+				}
+				.room ul li{
+					list-style: none;
+					font-size: 10px;
+					color: #555;				
+				}
+				.room>ul>li>ul>li{
+					height: 18px;
+					line-height: 18px;
+				}
+				.huanhang{
+					margin-top: 20px;
+				}
+				.more{
+					width: 980px;
+					margin: 0 auto;
+					color: #BFBFBF;
+				}
+				.banquan{
+					border-top: 1px solid #D6D6D6;
+					width: 980px;
+					padding-top: 10px;
+				}
+				.footer1{
+					width: 260px;
+					height: 17px;
+					float: left;
+				}
+				.footer2 {
+					height: 20px;
+					width: 320px;
+					margin-left: 300px;
+				}
+				.footer2 ul li{
+					list-style: none;					
+					font-size: 10px;										
+				}
+				.footer2 ul li a{
+					color: #555555;
+					text-decoration: none;
+				}
+				.footer2 ul{
+					width: 320px;
+					display: flex;
+					justify-content: space-around;
+				}
+				.more span{
+					color: #0070C9;
+				}
+				.footer3{
+					padding-bottom: 10px;
+				}
+				.footer4{
+					float: right;
+				}
+				.footer4 h5,.footer4 b{
+					float: right;
+					color: black;
+					position: relative;
+					top: -20px;
+				}
+				.footer4 b{
+					background: url(https://images.apple.com/ac/flags/1/images/zh-cn/16.png) no-repeat;
+					background-position: 0 0;
+					width: 21px;height: 16px;
+					display: block;
+				}
+			}			
+			@media only screen and (max-width:768px ){												
+				#da{
+					width:100%;
+					background-color: #323232;					
+					height: 44px;
+					line-height: 44px;
+				}						
+				.daohangtiao ul li{
+					display: none;
+				}
+				.xiao{
+					height: 40px;
+					line-height: 40px;
+					width: 100%;					
+					display: block;
+				}
+				.sp{
+					height: 40px;
+					line-height: 40px;
+					width: 100%;
+					display: block;
+				}
+				.sp ul{
+					display: flex;
+					justify-content: space-around;
+				}
+				.sp ul li{
+					list-style: none;
+				}
+				.sp ul li span{
+					color: white;
+				}
+				.shousuo{
+					color: white;					
+				}
+				.sp:hover .daohangtiao{
+					height: auto;
+					width: 100%;
+					display: inline-block;
+					background-color: #000000;	
+				}
+				.xiao:hover .daohangtiao ul{
+					display: inline-block;	
+					background-color: #000000;	
+					color: white;	
+					height: auto;width: 100%;							
+				}
+				.xiao:hover .daohangtiao ul li{
+					height: 40px;
+					width: 100%;
+					text-align: left;
+					list-style: none;
+					display: inline-block;	
+				}
+				.xiao:hover .daohangtiao ul li a{
+					color: white;
+					opacity: 0.8;
+					text-decoration: none;
+					margin-left: 5%;
+				}
+				.xiao .daohangtiao ul li a:hover{
+					color: white;
+					opacity: 0.5;
+					text-decoration: none;
+				}
+				.content{
+					width: 167px;
+					height: 333px;
+					margin: 0 auto;
+				}
+				.content1{
+					background: url(http://ozcpgl12w.bkt.clouddn.com/iphone_x_small.jpg) no-repeat;
+					width: 100%;
+					height: 100%;
+					background-position: 0 0;
+				}
+				.watch,.iphone{
+					width: 100%;
+					height: 500px;
+					text-align: center;
+					margin: 0 auto;
+					
+				}	
+				.iphone{
+					background-color:#FAFAFA;
+				}
+				.watch{
+					margin-top: 15px;
+					background-color:#F5F5F5;
+				}
+				.iphone1{
+					width: 100%;
+					height: auto;
+					padding-top: 40px;padding-bottom: 40px;
+				}
+				.watch1{
+					width: 100%;
+					height: auto;
+					padding-top: 37px;padding-bottom: 37px;
+				}
+				.iphone1 h2{
+					font-size: 32px;
+				}
+				.iphone1 h3{
+					font-size: 19px;
+				}
+				.watch1 h2{
+					font-size: 32px;
+					font-weight: 600;
+				}
+				.watch1 h3{
+					font-size: 19px;
+					font-weight: 400;
+				}
+				.content2{
+					background: url(http://ozcpgl12w.bkt.clouddn.com/holiday_last_chance_small.png) no-repeat;
+					width: 100%;
+					height: 100%;
+					background-position: 0 0;
+				}
+				.content3{
+					width: 235px;
+					height: 330px;
+					margin: 0 auto;
+				}
+				.apple a span ,.bao a span{
+					display: none;
+				}
+				.sou{
+					display: inline-block;
+				}
+				.liebiao{
+					margin-top: 15px;
+					width: 100%;
+				}
+				.liebiao ul{
+					display: flex;
+					justify-content: space-around;
+					flex-flow: wrap row;
+					height: 3190px;
+					width: 100%;
+				}	
+				.liebiao ul li{
+					list-style: none;
+					width: 100%;
+					height: 520px;
+				}
+				.liebiao ul li>div{
+					width: 100%;
+					height: 520px;
+					margin: 0 auto;
+					text-align: center;
+					overflow: hidden;
+				}
+				.te{
+					background-color: #1A1A1A;
+				}
+				.shu{
+					background-color: #B00E23;
+				}
+				.bei{
+					background-color: #FAFAFA;
+				}
+				.box1{
+					width: 100%;
+					height: auto;
+					padding-top: 53px;					
+				}
+				.box1 h2{
+					font-size: 40px;
+				}
+				.box1 h5{
+					font-size: 22px;
+					font-weight: 100;
+					
+				}
+				.box1 h2,.box1 h5{
+					color: white;
+				}
+				.coo h2,.coo h5{
+					color: black;
+				}
+				.special{
+					padding-top: 53px;
+				}
+				.box3{					
+					width: 100%;
+					height: 100%;
+					background-position: 0 0;
+				}
+				.box3-item{
+					background: url(http://ozcpgl12w.bkt.clouddn.com/imac_pro_small.jpg) no-repeat;
+				}	
+				.box2-item{
+					width: 323px;
+					height: 333px;
+					margin: 0 auto;
+				}
+				.box3-item1{
+					background: url(http://ozcpgl12w.bkt.clouddn.com/iphone_8_small.jpg) no-repeat;
+				}	
+				.box2-item1{
+					width: 269px;
+					height: 361px;
+					margin: 0 auto;
+					padding-top: 28px;
+				}
+				.box3-item2{
+					background: url(http://ozcpgl12w.bkt.clouddn.com/watch_series_3_small.jpg) no-repeat;
+				}	
+				.box2-item2{
+					width: 291px;
+					height: 326px;
+					margin: 0 auto;
+					padding-top: 90px;
+				}
+				.wenzi{
+					background: url(http://ozcpgl12w.bkt.clouddn.com/watch_series_3_promo_small.png) no-repeat;
+					background-position: 0 0;
+					width: 142px;
+					height: 54px;
+					margin: 0 auto;			
+				}
+				.box3-item3{
+					background: url(http://ozcpgl12w.bkt.clouddn.com/trade_up_small.jpg) no-repeat;
+				}	
+				.box2-item3{
+					width: 736px;
+					height: 500px;
+					margin: 0 auto;
+					position: relative;
+
+					top: -140px;
+				}
+				.show{
+					position: relative;
+					z-index: 100;
+				}
+				.box3-item4{
+					background: url(http://ozcpgl12w.bkt.clouddn.com/ipad_pro_film_small.jpg) no-repeat;
+				}	
+				.box2-item4{
+					width: 736px;
+					height: 500px;
+					margin: 0 auto;
+					position: relative;
+					top: -134px;
+					left: -2px;
+				}
+				.box3-item5{
+					background: url(http://ozcpgl12w.bkt.clouddn.com/holiday_film_small.jpg) no-repeat;
+				}	
+				.box2-item5{
+					width: 736px;
+					height: 548px;
+					margin: 0 auto;
+					position: relative;
+					top: -186px;
+					left: -2px;
+				}
+				.footer{
+					background-color: #F2F2F2;
+					width: 100%;
+					margin: 0 auto;	
+					margin-top: -20px;				
+				}
+				.room{
+					margin: 0 auto;				
+				}
+				.room>ul{
+					display: block;
+					width: 100%;
+				}
+				.room ul li{
+					list-style: none;
+					font-size: 10px;
+					color: #555;				
+				}
+				.room>ul>li>ul>li>ul>li{
+					display: none;
+				}
+				.room>ul>li>ul>li{
+					height: 18px;
+					padding-bottom: 10px;padding-top: 10px;
+					border-bottom: 1px solid #D6D6D6;
+				}
+				.huanhang{
+					margin-top: 20px;
+				}
+				.more{
+					margin: 0 auto;
+					color: #BFBFBF;
+					margin-top: 18px;
+				}
+				.banquan{
+
+					width: 980px;
+					padding-top: 10px;
+				}
+				.footer1{
+					width: 260px;
+					height: 17px;
+					float: left;
+				}
+				.footer2 {
+					height: 20px;
+					width: 320px;
+					margin-left: 300px;
+				}
+				.footer2 ul li{
+					list-style: none;					
+					font-size: 10px;										
+				}
+				.footer2 ul li a{
+					color: #555555;
+					text-decoration: none;
+				}
+				.footer2 ul{
+					width: 320px;
+					display: flex;
+					justify-content: space-around;
+				}
+				.more span{
+					color: #0070C9;
+				}
+				.footer3{
+					padding-bottom: 10px;
+				}
+				.move{
+					margin-top: -20px !important;
+				}
+			}
+		</style>
+
+	</head>
+	<body>	
+		<div class="guanggao">
+			<div class="guanggao1">
+				<广告>
+			</div>
+		<!--导航-->	
+		</div>
+		<div id="da">
+			<div class="xiao">
+				<div class="sp">
+					<ul>
+						<li><span class="iconfont icon-fenlei"></span></li>
+						<li><span class="iconfont icon-pingguo"></span></li>
+						<li><span class="iconfont icon-shoppingbag"></span></li>
+					</ul>					
+				</div>
+				<div class="daohangtiao">
+					<ul>
+						<li class="apple">
+							<a href="#">
+								<span class="iconfont icon-pingguo"></span>
+							</a>							
+						</li>
+						<li>
+							<a href="#">
+								Mac
+							</a>							
+						</li>
+						<li>
+							<a href="#">
+								ipad
+							</a>							
+						</li>
+						<li>
+							<a href="#">
+								iphone
+							</a>							
+						</li>
+						<li>
+							<a href="#">
+								Watch
+							</a>							
+						</li>
+						<li>
+							<a href="#">
+								Music
+							</a>						
+						</li>
+						<li>
+							<a href="#">
+								技术支持
+							</a>							
+						</li>
+						<li>
+							<a href="#">
+								<span class="iconfont icon-sousuo"></span>
+								<span class="sou">搜索apple.com</span>
+							</a>							
+						</li>
+						<li class="bao">
+							<a href="#">
+								<span class="iconfont icon-shoppingbag"></span>
+							</a>							
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+		<!--手机-->
+		<div class="iphone">
+			<div class="iphone1">
+				<h2>
+					iPhoneX
+				</h2>
+				<h3>
+					hello,未来。
+				</h3>
+			</div>			
+			<div class="content">
+				<div class="content1"></div>
+			</div>			
+		</div>
+		<!--表-->
+		<div class="watch ">
+			<div class="watch1 ">
+				<h2>送上心意,开启他们的想象力。</h2>
+				<h3>选购现货好礼。</h3>
+			</div>
+			<div class="content3">
+				<div class="content2"></div>
+			</div>
+		</div>
+		<!--列表-->
+		<div class="liebiao">
+			<ul>
+				<li>
+					<div class="te">
+						<div class="box1">
+							<h2>iMac Pro</h2>
+							<h5>现已发售</h5>
+						</div>
+						<div class="box2 box2-item">
+							<div class="box3 box3-item"></div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="shu">
+						<div class="box1 special coo">
+							<h2>iPhone8</h2>
+							<h5>新一代iPhone</h5>
+						</div>
+						<div class="box2 box2-item1">
+							<div class="box3 box3-item1"></div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="bei">
+						<div class="box1 coo">
+							<h2><div class="wenzi"></div></h2>
+							<h5>更自由,更来电。</h5>
+						</div>
+						<div class="box2 box2-item2">
+							<div class="box3 box3-item2"></div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="bei">
+						<div class="box1 coo show">
+							<h2>iPhone年年焕新计划</h2>
+							<h5>每年都有一部新iPhone,</h5>
+							<h5>并享受AppleCare+全方位计划。</h5>
+						</div>
+						<div class="box2 box2-item3">
+							<div class="box3 box3-item3"></div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div>
+						<div class="box1 show">
+							<h2>iPad Pro+ios11</h2>
+							<h5>观看影片</h5>
+						</div>
+						<div class="box2 box2-item4">
+							<div class="box3 box3-item4"></div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="move">
+						<div class="box1 show">
+							<h2>这个冬天,</h2>
+							<h2>你让谁心动?</h2>
+							<h5>观看<<心动>></心动></h5>
+						</div>
+						<div class="box2 box2-item5">
+							<div class="box3 box3-item5"></div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--底部-->
+		<div class="footer">
+			<div class="room">
+				<ul>
+					<li>
+						<ul>
+							<li><b>选购及了解</b>
+								<ul>
+									<li>Mac</li>
+									<li>iPad</li>
+									<li>iPhone</li>
+									<li>Watch</li>
+									<li>Music</li>
+									<li>iTunes</li>
+									<li>iPod touch</li>
+									<li>配件</li>
+									<li>App Atore充值卡</li>
+								</ul>
+							</li>				
+						</ul>
+					</li>
+					<li>
+						<ul>						
+							<li><b>App Atore商店</b>
+								<ul>
+									<li><b>查找零售店</b></li>
+									<li>Genius Bar天才吧</li>
+									<li>Today at Apple</li>
+									<li>Apple夏令营</li>
+									<li>Field Trip课外活动</li>
+									<li>Apple Store App </li>
+									<li>翻新和优惠</li>
+									<li>分期付款</li>
+									<li>重复使用和循环利用</li>
+									<li>订单状态</li>
+									<li>选购帮助</li>	
+								</ul>
+							</li>
+												
+						</ul>
+					</li>
+					<li>
+						<ul>						
+							<li><b>教育应用</b>
+								<ul>
+									<li>Apple与教育</li>
+									<li>高校师生选购</li>
+									<li class="huanhang"><b>商务应用</b></li>
+									<li>Apple与商务</li>
+									<li>商务选购</li>	
+								</ul>
+							</li>
+												
+						</ul>
+					</li>
+					<li>
+						<ul>	
+							<li><b>账户</b>
+								<ul>
+									<li>管理你的Apple ID</li>
+									<li>Apple Store账户</li>
+									<li>iCloud.com</li>
+									<li class="huanhang"><b>Apple价值观</b></li>
+									<li>辅助功能</li>
+									<li>环境责任</li>
+									<li>隐私</li>
+									<li>供应商责任</li>
+								</ul>
+							</li>
+																		
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li><b>关于Apple</b>
+								<ul>
+									<li>Newsroom</li>
+									<li>Apple管理层</li>
+									<li>工作机会</li>
+									<li>活动</li>
+									<li>联系Apple</li>
+								</ul>
+							</li>
+							
+						</ul>
+					</li>				
+				</ul>
+			</div>
+			
+			<div class="more">
+				<div class="footer3">
+					<h6>
+						更多选购方式：前往<span>Apple Store 零售店</span> ，
+						致电 400-666-8800 或查找在你附近的<span>授权经销商</span>。
+					</h6>					
+				</div>
+				<div class="banquan">
+					<div class="footer1">
+						<h6>
+							Copyright &copy; 2017 Apple Inc. 保留所有权利。								
+						</h6>
+					</div>				
+					<div class="footer2">
+						<ul>
+							<li><a href="#">隐私政策|</a></li>
+							<li><a href="#">使用条款|</a></li>
+							<li><a href="#">销售政策|</a></li>
+							<li><a href="#">法律信息|</a></li>
+							<li><a href="#">网站地图</a></li>
+						</ul>						
+					</div>
+					<div class="footer4">
+						<b></b>
+						<h5>中国</h5>
+					</div>
+				</div>
+				<div>
+					<h6>京公安网安备 11010502008968 京ICP备10214630</h6>	
+				</div>
+							
+			</div>
+		</div>
+
+			<!--<script type="text/javascript">
+				/*js方法*/
+				window.onscroll=function(){  
+					var topScroll =document.body.scrollTop;//滚动的距离,距离顶部的距离     
+					var bignav = document.getElementById("da");//获取到导航栏id       
+					if(topScroll > 60){ //当滚动距离大于250px时执行下面的东西        
+						bignav.style.position = 'fixed';         
+						bignav.style.top = '0';        
+						bignav.style.zIndex = '9999';       
+					}else{//当滚动距离小于250的时候执行下面的内容，也就是让导航栏恢复原状
+					bignav.style.position = 'static';        
+					}    
+				}
+			</script>-->
+			<script>
+				/*jq方法*/
+			$(function(){
+				var a = $('#da'),
+					b =a.offset();
+				$(document).on('scroll',function(){
+					var	c = $(document).scrollTop();
+					if(b.top<=c){
+						a.css({'position':'fixed','top':'0px' ,'z-index':'9999'})
+						}else{
+							a.css({'position':'absolute','top':'40px'})
+							}
+					})
+				})
+			</script>
+		<!--<script>
+			 var a;           
+		        function scroll( fn ) {
+		            var beforeScrollTop = document.body.scrollTop,
+		                fn = fn || function() {};
+		            window.addEventListener("scroll", function() {
+		                var afterScrollTop = document.body.scrollTop,
+		                    delta = afterScrollTop - beforeScrollTop;
+		                if( delta === 0 ) return false;
+		                fn( delta > 0 ? "down" : "up" );
+		                beforeScrollTop = afterScrollTop;
+		            }, false);
+		        }
+		        scroll(function(direction) { 
+		            // console.log(direction);
+		            a =  direction;
+		        }); 
+		</script>-->
+	</body>
+	
+</html>
